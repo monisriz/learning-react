@@ -1,0 +1,11 @@
+.charBox {
+  display: inline-block;
+  padding: 16px;
+  margin: 16px;
+  font-size: 2em;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 4px;
+  width: 30px;
+  height: 30px;
+}
