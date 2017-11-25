@@ -1,0 +1,18 @@
+.cockpitBtn {
+  background-color: lightgreen;
+  font: inherit;
+  border: 1px solid blue;
+  border-radius: 4px;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.cockpitBtn:hover {
+  background-color: pink;
+  color: black;
+}
+
+.cockpitBtn:active {
+  background-color: salmon;
+  color: white;
+}
