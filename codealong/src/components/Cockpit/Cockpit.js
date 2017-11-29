@@ -1,17 +1,18 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import './Cockpit.css';
+// import Aux from '../../hoc/Hoc'
 
 const cockpit = (props) => {
   return (
-    <div>
+    <Fragment>
       <h1>{props.appTitle}</h1>
       <p>This is really working!</p>
       <button
         className="cockpitBtn"
         onClick={props.clicked}>Toggle Persons
       </button>
-    </div>
+    </Fragment>
   )
 }
 
-export default cockpit
+export default cockpit;
