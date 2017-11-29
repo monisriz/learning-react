@@ -1,3 +1,3 @@
 #learning-react
 
-Various practice assignments and code tutorials while learning React/Redux
+Various practice assignments and online tutorials I follow while learning React/Redux
