@@ -7,16 +7,16 @@ import Persons from '../components/Persons/Persons';
 class App extends PureComponent {
   constructor(props) {
     super(props);
+    this.state = {
+      persons: [
+        { id: 1, name: 'Max', age: 28 },
+        { id: 2, name: 'Man', age: 29 },
+        { id: 3, name: 'Tim', age: 26 }
+      ],
+      showPersons: false,
+      toggleClicked: 0
+    }
     console.log('inside App.js constructor: ', props);
-  }
-
-  state = {
-    persons: [
-      { id: 1, name: 'Max', age: 28 },
-      { id: 2, name: 'Man', age: 29 },
-      { id: 3, name: 'Tim', age: 26 }
-    ],
-    showPersons: false
   }
 
   componentWillMount() {
@@ -77,8 +77,11 @@ class App extends PureComponent {
 
   togglePersonsHandler = () => {
     const showStatus = this.state.showPersons;
-    this.setState({
-      showPersons: !showStatus
+    this.setState((prevState, props) => {
+      return {
+        showPersons: !showStatus,
+        toggleClicked: prevState.toggleClicked + 1
+      }
     })
   }
 
