@@ -43,7 +43,7 @@ class Person extends Component {
 
 Person.propTypes = {
   clicked: PropTypes.func,
-  name: PropTypes.num,
+  name: PropTypes.string,
   age: PropTypes.number,
   changed: PropTypes.func
 };
